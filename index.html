@@ -145,12 +145,60 @@ footer{background:#0d0c14;padding:44px 56px;display:flex;justify-content:space-b
 @keyframes slideUp{from{opacity:0;transform:translateY(20px)}to{opacity:1;transform:none}}
 @media(max-width:900px){
   nav{padding:18px 24px}.nav-links{display:none}
-  .cont{padding:0 24px}
+  .cont{padding:0 20px}
+  .sec{padding:80px 0}
   .hero{grid-template-columns:1fr}.hero-right{height:260px}
-  .about-grid,.vision-grid,.contact-grid{grid-template-columns:1fr;gap:40px}
+  .hero-left{padding:60px 20px 48px 20px}
+  .hero-title{font-size:clamp(42px,11vw,72px)}
+  .about-grid,.vision-grid,.contact-grid{grid-template-columns:1fr;gap:36px}
   .prog-cols{grid-template-columns:1fr}
-  .gal-row{flex-direction:column}.gal-img{height:240px}
+  .prog-card{padding:36px 24px}
+  .prog-name{font-size:36px}
+  .gal-row{flex-direction:column;padding:0 20px}.gal-img{height:220px}
+  .gal-head{padding:0 20px}
+  .tri-wrap{flex-direction:column;align-items:center;gap:40px}
+  .tri-svg{width:220px}
+  .tri-cards{width:100%;min-width:unset}
+  .tri-card{padding:22px 20px}
+  .tc-p{font-size:12px;line-height:1.85}
+  .logo-card{min-height:280px;padding:40px 28px}
+  .contact-left h2{font-size:clamp(36px,10vw,60px)}
+  .c-item p{font-size:16px}
   footer{flex-direction:column;gap:10px;text-align:center;padding:28px 24px}
+  .sec-num{font-size:56px;top:32px;right:24px}
+  .intro-wordmark{font-size:16px;letter-spacing:.4em}
+}
+@media(max-width:480px){
+  .cont{padding:0 16px}
+  .sec{padding:64px 0}
+  .hero-left{padding:48px 16px 40px 16px}
+  .hero-eyebrow{font-size:8px}
+  .hero-title{font-size:clamp(38px,12vw,58px)}
+  .hero-sub{font-size:13px}
+  .hero-desc{font-size:12px;line-height:2}
+  .hero-btn{padding:11px 28px;font-size:9px}
+  .sec-h2{font-size:clamp(26px,7vw,40px)}
+  .about p{font-size:12.5px;line-height:2.1}
+  .tri-svg{width:180px}
+  .tri-card{padding:18px 16px;gap:14px}
+  .tc-num{font-size:22px}
+  .tc-h{font-size:9px}
+  .tc-p{font-size:11.5px}
+  .prog-card{padding:28px 18px}
+  .prog-name{font-size:30px}
+  .prog-sub{font-size:10px}
+  .prog-desc{font-size:12px}
+  .gal-row{padding:0 16px}.gal-img{height:190px}
+  .gal-head{padding:0 16px}
+  .vision p{font-size:12.5px;line-height:2.1}
+  .pill{font-size:9px;padding:6px 14px}
+  .vision-img img{height:300px}
+  .contact-left h2{font-size:clamp(32px,9vw,48px)}
+  .contact-left p{font-size:12px}
+  .c-item p{font-size:15px}
+  .speech-test-btn{font-size:8px;padding:9px 16px}
+  nav{padding:14px 16px}
+  footer{padding:24px 16px;font-size:9px}
 }
 </style>
 </head>
@@ -212,7 +260,7 @@ footer{background:#0d0c14;padding:44px 56px;display:flex;justify-content:space-b
         <span class="sec-label rv">About Ground Be</span>
         <h2 class="sec-h2 rv d1">About <em>US</em></h2>
         <p class="rv d2">그라운드 비(Ground Be)는 인간관계와 일상에 치여 에너지가 완전히 방전된 2030 청년들이, 무거운 짐을 잠시 내려놓고 가장 나다운 존재를 찾아가는 크리에이티브 멘탈케어 레이블입니다.</p>
-        <p class="rv d2">무겁고 딱딱한 상담실 대신, 개성 넘치는 카운슬테이너(코치, 타로 마스터, 멘토 등)들이 팝업스토어나 거리의 축제처럼 친근하게 다가가, 꽉 막힌 속을 시원한 탄산수처럼 뚫어주는 가벼운 소통으로 첫 문을 엽니다.</p>
+        <p class="rv d2">무겁고 딱딱한 상담실 대신, 개성 넘치는 디렉터(코치, 멘토 등)들이 팝업스토어나 거리의 축제처럼 친근하게 다가가, 꽉 막힌 속을 시원한 탄산수처럼 뚫어주는 가벼운 소통으로 첫 문을 엽니다.</p>
       </div>
       <div class="rv d1"><div class="logo-card">
 <svg viewBox="0 0 140 170" width="130" height="170" style="position:relative;z-index:1" xmlns="http://www.w3.org/2000/svg" fill="none" stroke="white" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round">
@@ -237,8 +285,8 @@ footer{background:#0d0c14;padding:44px 56px;display:flex;justify-content:space-b
           <polygon points="150,18 285,255 15,255" stroke="url(#tg)" stroke-width="1.2" fill="rgba(139,123,181,.05)" filter="url(#glow)"/>
           <circle cx="150" cy="18" r="4" fill="#8b7bb5"/><circle cx="285" cy="255" r="4" fill="#8b7bb5"/><circle cx="15" cy="255" r="4" fill="#8b7bb5"/>
           <text x="150" y="9" text-anchor="middle" font-family="serif" font-size="11" fill="rgba(197,189,224,.8)" letter-spacing="2">Management</text>
-          <text x="8" y="272" font-family="sans-serif" font-size="8.5" fill="rgba(197,189,224,.5)">Education</text>
-          <text x="292" y="272" text-anchor="end" font-family="sans-serif" font-size="8.5" fill="rgba(197,189,224,.5)">Pop-up</text>
+          <text x="8" y="272" font-family="sans-serif" font-size="8.5" fill="rgba(197,189,224,.5)">Directing</text>
+          <text x="292" y="272" text-anchor="end" font-family="sans-serif" font-size="8.5" fill="rgba(197,189,224,.5)">Advertising</text>
         </svg>
         <div class="tri-cards">
           <div class="tri-card rv d1"><span class="tc-num">01</span><div>
